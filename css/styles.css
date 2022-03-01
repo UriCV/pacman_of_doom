@@ -6,7 +6,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(
 .border{
     width: 300px;
     height: 100px;
-    border: 1px solid:#000D41;
+    border: 1px solid #000D41;
 }
 
 .deads{
