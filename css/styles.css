@@ -1,0 +1,23 @@
+body{
+    background: rgb(2,0,36);
+background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+}
+
+.border{
+    width: 300px;
+    height: 100px;
+    border: 1px solid:#000D41;
+}
+
+.deads{
+    width: 300px;
+    height: 100px;
+    border: 1px solid red;
+}
+
+.titulo h1{
+    font-size: 100px;
+    /* display: flex; */
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+}

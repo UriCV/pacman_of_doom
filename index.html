@@ -6,23 +6,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pacman Metal Doom</title>
     <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </head>
 <body>
-    <h1>Pacman of Doom</h1>
-    <input type="text">
-    <button id="add-btn">Add</button>
-    <button id="delete-btn">Delete</button>
 
-    <ul id="vius">
+    <div class="background  ">
+
+    </div>
+    <section class="titulo">
+    <h1>Pacman of Doom</h1>
+    </section>
+    <div class="text-center">
+    <!--Buttons and inputs-->
+    
+   
+ 
+     <button type="submit" class="btn btn-dark">add</button>
+    
+     <button type="reset" class="btn btn-dark">Restart</button>
+     </div>
+        
+
+  
+<span> 
+    <ul style="list-style-type: none; display: inline-block; color: green;" id="vius">
         <li>A</li>
         <li>B</li>
         <li>C</li>
     </ul>
-    <ul id="morts">
+    <ul style="list-style-type: none;display: inline-block; color: red; id="morts">
+        <li>Not found</li>
+        <li>Not found</li>
         <li>Not found</li>
     </ul>
+</span>
+    <div class="border">
+        
+    </div>
+
+    <div class="death">
+    </div>
 
     <div id="" class=""></div>
-<script src="./js/pacman.js"></script>
+    <div>
+
+   <audio controls autoplay> 
+    <source src="http://soundfxcenter.com/video-games/pacman/8d82b5_Pacman_Opening_Song_Sound_Effect.mp3" type="audio/mpeg">
+   </audio>
+ </div>
+ <script src="./js/pacman.js"></script>
 </body>
 </html>
