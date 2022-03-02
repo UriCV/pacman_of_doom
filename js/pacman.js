@@ -22,7 +22,16 @@ function printLives() {
     }
 }
 
-printLives();
+function restart() {
+    // llistat verd original -> arrayNames
+    arrayNames = ["Ingrid", "Uri", "Guillermo", "Ales", "Albert", "Adrian", "Dani", "Yeray", "Jess", "Alex", "Scarlet","Sergi"];
+    // llistat vermell buit -> reset HTML
+    document.getElementById("morts").innerHTML = "";
+    // imprimir de nou el llistat
+    printLives();
+}
+
+printLives(); // executa la funció printLives()
 
 /* // explicacio de for
 let posicio = 0;
