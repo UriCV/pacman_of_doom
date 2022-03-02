@@ -3,11 +3,13 @@ let arrayNames = ["Ingrid", "Uri", "Guillermo", "Ales", "Albert", "Adrian", "Dan
 let result;
 function randomArrayNames(){
     console.log(arrayNames);
-    result = arrayNames[Math.floor(Math.random()*arrayNames.length)];
+    let result = arrayNames[Math.floor(Math.random()*arrayNames.length)];
     console.log("Abans d'splice: " + result);
-    arrayNames.splice(result, 1);
+    let splicedName = arrayNames.splice(result, 1);
     console.log("Després d'splice: " + result);
-    console.log(arrayNames);
+    console.log('aa',delete result);
+    console.log(splicedName);
     document.getElementById("names").innerHTML=result;
     document.getElementById("list").innerHTML+=`<li>${result}</li>`;
 }
+
