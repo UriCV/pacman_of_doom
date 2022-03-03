@@ -11,6 +11,9 @@ function randomArrayNames() {
         document.getElementById("names").innerHTML= itemExtract;
         document.getElementById("morts").innerHTML+=`<li>${itemExtract}</li>`;
         document.getElementById("pacman").classList.add("eat");
+        setTimeout(function(){
+            document.getElementById("pacman").classList.remove("eat");
+        }, 6000);
     }
 }
 

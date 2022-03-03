@@ -1,6 +1,7 @@
 #pacman {
   width: 100px;
   height: 100px;
+  left: 15%;
   position: absolute;
   /* animation: move-in-steps 6s infinite; */
 }
