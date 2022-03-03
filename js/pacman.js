@@ -11,9 +11,15 @@ function randomArrayNames() {
         document.getElementById("names").innerHTML= itemExtract;
         document.getElementById("morts").innerHTML+=`<li>${itemExtract}</li>`;
         document.getElementById("pacman").classList.add("eat");
+        document.getElementById("add-btn").disabled = true;
         setTimeout(function(){
             document.getElementById("pacman").classList.remove("eat");
+            document.getElementById("add-btn").disabled = false;
         }, 6000);
+        // setTimeout(acció, temps) 
+        // -> l'acció en general es una funcio
+        // -> el temps es en milisegons
+        // -> un cop pasin els segons s'activa la funció
     }
 }
 
