@@ -12,6 +12,10 @@ function randomArrayNames() {
         document.getElementById("morts").innerHTML+=`<li>${itemExtract}</li>`;
         document.getElementById("pacman").classList.add("eat");
         document.getElementById("add-btn").disabled = true;
+        document.getElementById("names").style.color = "orange";
+        setTimeout(function(){
+            document.getElementById("names").style.color = "#1919A6";
+        }, 1350);
         setTimeout(function(){
             document.getElementById("pacman").classList.remove("eat");
             document.getElementById("add-btn").disabled = false;
