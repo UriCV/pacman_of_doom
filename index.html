@@ -21,7 +21,6 @@
     </section>
 
     <div id="pacman" class="animate__animated animate__backInLeft"></div>
-
     <div class="text-center">
         <!--Buttons and inputs-->
         
@@ -34,14 +33,12 @@
         
         <button class="animate__animated animate__backInRight btn btn-dark" onclick="restart()" class="btn btn-dark" >Restart</button>
     </div>
-    
-    <span> 
-        <ul style="list-style-type: none; display: inline-block; color: green;" id="vius">
-        </ul>
-        
-        <ul style="list-style-type: none;display: inline-block; color: red;" id="morts">
-        </ul>
-    </span>
+
+
+    <section class="lists">
+            <ul class="alive" id="vius"></ul>
+            <ul class="dead" id="morts">Dead:</ul>
+    </section>
 
     <script src="./js/audio.js"></script>
     <script src="./js/pacman.js"></script>

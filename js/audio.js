@@ -1,4 +1,5 @@
-// let link = new Audio("http://soundfxcenter.com/video-games/pacman/8d82b5_Pacman_Opening_Song_Sound_Effect.mp3");
+//let link = new Audio("http://soundfxcenter.com/video-games/pacman/8d82b5_Pacman_Opening_Song_Sound_Effect.mp3");
+
 
 window.onload = function() {
     link.play();

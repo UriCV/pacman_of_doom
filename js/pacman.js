@@ -15,7 +15,7 @@ function randomArrayNames() {
         setTimeout(function(){
             document.getElementById("pacman").classList.remove("eat");
             document.getElementById("add-btn").disabled = false;
-        }, 6000);
+        }, 4990);
         // setTimeout(acció, temps) 
         // -> l'acció en general es una funcio
         // -> el temps es en milisegons
@@ -30,13 +30,22 @@ function printLives() {
         vius.innerHTML += `<li>${arrayNames[i]}</li>`;
         // vius.innerHTML = vius.innerHTML + `<li>${arrayNames[i]}</li>`;
     }
+    /* // explicacio de for
+    let posicio = 0;
+    vius.innerHTML += `<li>${arrayNames[posicio]}</li>`;
+
+    posicio = posicio + 1; // 1
+    vius.innerHTML += `<li>${arrayNames[posicio]}</li>`;
+
+    posicio = posicio + 1; // 2
+    vius.innerHTML += `<li>${arrayNames[posicio]}</li>`; */
 }
 
 function restart() {
     // llistat verd original -> arrayNames
     arrayNames = ["Ingrid", "Uri", "Guillermo", "Ales", "Albert", "Adrian", "Dani", "Yeray", "Jess", "Alex", "Scarlet","Sergi"];
-    // llistat vermell buit -> reset HTML
-    document.getElementById("morts").innerHTML = "";
+    // llistat vermell inserta text -> reset HTML
+    document.getElementById("morts").innerHTML = "Dead:"; 
     // nom seleccionat buit -> reset HTML
     document.getElementById("names").innerHTML = "";
     // imprimir de nou el llistat
@@ -44,13 +53,3 @@ function restart() {
 }
 
 printLives(); // executa la funció printLives()
-
-/* // explicacio de for
-let posicio = 0;
-vius.innerHTML += `<li>${arrayNames[posicio]}</li>`;
-
-posicio = posicio + 1; // 1
-vius.innerHTML += `<li>${arrayNames[posicio]}</li>`;
-
-posicio = posicio + 1; // 2
-vius.innerHTML += `<li>${arrayNames[posicio]}</li>`; */

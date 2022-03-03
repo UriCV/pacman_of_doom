@@ -8,23 +8,64 @@
     border: 1px solid #000D41;
 }
 
-.deads{
-    width: 300px;
-    height: 100px;
-    border: 1px solid red;
-}
-
 .titulo h1{
     font-size: 150px;
     /* display: flex; */
     text-align: center;
-    font-family: 'Staatliches', cursive;padding: 60px;
+    font-family: 'Staatliches', cursive;
+    padding: 60px;
     text-align: center;
     color: yellow;    
     text-shadow: 2px 2px black;       
 }
 
-.image img{
-    height: 100px;
-    width: 100px;
+.lists{
+    border: 5px solid #1919A6;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.lists ul {
+    font-size: 115%;
+    font-family: 'Staatliches';
+    border: 5px solid #1919A6;
+    border-radius: 12px;
+    list-style-type: none;
+    flex: 1;
+    margin-bottom: 0;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.dead {
+    color: red;
+}
+
+.alive {
+    color: green;
+}
+
+.alive li::after,
+.dead li::after {
+    content: ",";
+}
+
+.alive li:last-child::after,
+.dead li:last-child::after {
+    content: ".";
+}
+
+.alive::before {
+    content: "Alive:";
+}
+
+#names{
+    font-family: 'Staatliches';
 }

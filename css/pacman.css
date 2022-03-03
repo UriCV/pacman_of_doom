@@ -1,13 +1,13 @@
 #pacman {
   width: 100px;
   height: 100px;
-  left: 15%;
+  left: 20%;
   position: relative;
   /* animation: move-in-steps 6s infinite; */
 }
 
 .eat {
-  animation: move-in-steps 6s;
+  animation: move-in-steps 5s;
 }
 
 #pacman::before {
@@ -23,7 +23,7 @@
 }
 
 .eat::before {
-  animation: pacman-open-top 1.5s infinite;
+  animation: pacman-open-top 1s infinite;
 }
 
 #pacman::after {
@@ -40,15 +40,15 @@
 }
 
 .eat::after {
-  animation: pacman-open-bottom 1.5s infinite;
+  animation: pacman-open-bottom 1s infinite;
 }
 
 @keyframes move-in-steps {
   0% {
-    left: 15%;
+    left: 20%;
   }
   100% {
-    left: 75%;
+    left: 70%;
   }
 }
 
