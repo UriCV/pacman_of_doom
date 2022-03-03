@@ -27,6 +27,8 @@ function restart() {
     arrayNames = ["Ingrid", "Uri", "Guillermo", "Ales", "Albert", "Adrian", "Dani", "Yeray", "Jess", "Alex", "Scarlet","Sergi"];
     // llistat vermell buit -> reset HTML
     document.getElementById("morts").innerHTML = "";
+    // nom seleccionat buit -> reset HTML
+    document.getElementById("names").innerHTML = "";
     // imprimir de nou el llistat
     printLives();
 }
