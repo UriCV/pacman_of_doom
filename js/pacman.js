@@ -10,6 +10,7 @@ function randomArrayNames() {
         printLives();
         document.getElementById("names").innerHTML= itemExtract;
         document.getElementById("morts").innerHTML+=`<li>${itemExtract}</li>`;
+        document.getElementById("pacman").classList.add("eat");
     }
 }
 

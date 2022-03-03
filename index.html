@@ -8,22 +8,25 @@
     <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/pacman.css">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="/dist/output.css" rel="stylesheet"> 
 </head>
 <body class="background">
 
     <section class="titulo">
         <h1 class="animate__animated animate__bounceInDown">Pacman of Doom</h1>
     </section>
+
+    <div id="pacman" class="animate__animated animate__backInLeft"></div>
+
     <div class="text-center">
         <!--Buttons and inputs-->
         
         <p id="names" style="color: orange;"></p>
-        <button class="animate__animated animate__backInLeft btn btn-dark" onclick="randomArrayNames()" class="btn btn-dark" class="animate__animated animate__bounceInDown"">Add</button>
+        <button class="animate__animated animate__backInLeft btn btn-dark" onclick="randomArrayNames()" class="btn btn-dark" class="animate__animated animate__bounceInDown">Add</button>
         <!-- <section class="list">
             <ul id="list">
             </ul>
@@ -31,7 +34,7 @@
         
         <button class="animate__animated animate__backInRight btn btn-dark" onclick="restart()" class="btn btn-dark" >Restart</button>
     </div>
-
+    
     <span> 
         <ul style="list-style-type: none; display: inline-block; color: green;" id="vius">
         </ul>
@@ -40,15 +43,6 @@
         </ul>
     </span>
 
-    <!-- <div class="death">
-    </div>
-
-    <div id="" class=""></div>
-    <div> -->
-
-    <!-- <audio controls class="d-block"> 
-        <source src="http://soundfxcenter.com/video-games/pacman/8d82b5_Pacman_Opening_Song_Sound_Effect.mp3" type="audio/mpeg">
-    </audio> -->
     <script src="./js/audio.js"></script>
     <script src="./js/pacman.js"></script>
 </body>

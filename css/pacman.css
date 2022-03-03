@@ -1,0 +1,77 @@
+#pacman {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  /* animation: move-in-steps 6s infinite; */
+}
+
+.eat {
+  animation: move-in-steps 6s;
+}
+
+#pacman::before {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  height: 51%;
+  width: 100%;
+  border-radius: 100px 100px 0 0;
+  transform-origin: center bottom;
+  rotate: -45deg;
+  /* animation: pacman-open-top 1.5s infinite; */
+}
+
+.eat::before {
+  animation: pacman-open-top 1.5s infinite;
+}
+
+#pacman::after {
+  content: "";
+  position: absolute;
+  background-color: yellow;
+  height: 51%;
+  width: 100%;
+  top: 50%;
+  border-radius: 0 0 100px 100px;
+  transform-origin: center top;
+  rotate: 45deg;
+  /* animation: pacman-open-bottom 1.5s infinite; */
+}
+
+.eat::after {
+  animation: pacman-open-bottom 1.5s infinite;
+}
+
+@keyframes move-in-steps {
+  0% {
+    left: 15%;
+  }
+  100% {
+    left: 75%;
+  }
+}
+
+@keyframes pacman-open-top {
+  0% {
+    rotate: -45deg;
+  }
+  50%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: -45deg;
+  }
+}
+
+@keyframes pacman-open-bottom {
+  0% {
+    rotate: 45deg;
+  }
+  50%{
+    rotate: 0deg;
+  }
+  100%{
+    rotate: 45deg;
+  }
+}
+
