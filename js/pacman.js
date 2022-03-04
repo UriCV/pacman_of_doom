@@ -1,24 +1,32 @@
-let vius = document.getElementById("vius");
-let arrayNames = ["Ingrid", "Uri", "Guillermo", "Ales", "Albert", "Adrian", "Dani", "Yeray", "Jess", "Alex", "Scarlet","Sergi"];
+const vius = document.getElementById("vius");
+const morts = document.getElementById("morts");
+const names = document.getElementById("names");
+const pacman = document.getElementById("pacman");
+const addBtn = document.getElementById("add-btn");
+const restartBtn = document.getElementById("restart-btn");
+
+let arrayNames = ["Ingrid", "Uri", "Guillermo", "Ales", "Albert", "Adrian", "Dani", "Jose Miguel", "Jess", "Alex", "Scarlet","Sergi"];
 
 function randomArrayNames() {
     if (arrayNames.length !== 0) {
         let random = Math.floor(Math.random()*arrayNames.length);
-        console.log(random);
         let itemExtract = arrayNames[random];
         arrayNames.splice(random, 1);
         printLives();
-        document.getElementById("names").innerHTML= itemExtract;
-        document.getElementById("morts").innerHTML+=`<li>${itemExtract}</li>`;
-        document.getElementById("pacman").classList.add("eat");
-        document.getElementById("add-btn").disabled = true;
-        document.getElementById("names").style.color = "orange";
+        names.innerHTML = itemExtract;
+        pacman.classList.add("eat");
+        addBtn.disabled = true;
+        restartBtn.disabled = true;
+        names.style.color = "orange";
         setTimeout(function(){
-            document.getElementById("names").style.color = "#1919A6";
+            morts.innerHTML+=`<li>${itemExtract}</li>`;
+            names.style.color = "#1919A6";
         }, 1350);
         setTimeout(function(){
-            document.getElementById("pacman").classList.remove("eat");
-            document.getElementById("add-btn").disabled = false;
+            pacman.classList.remove("eat");
+            addBtn.disabled = false;
+            restartBtn.disabled = false;
+            names.innerHTML="";
         }, 4990);
         // setTimeout(acció, temps) 
         // -> l'acció en general es una funcio
@@ -47,11 +55,11 @@ function printLives() {
 
 function restart() {
     // llistat verd original -> arrayNames
-    arrayNames = ["Ingrid", "Uri", "Guillermo", "Ales", "Albert", "Adrian", "Dani", "Yeray", "Jess", "Alex", "Scarlet","Sergi"];
+    arrayNames = ["Ingrid", "Uri", "Guillermo", "Ales", "Albert", "Adrian", "Dani", "Jose Miguel", "Jess", "Alex", "Scarlet","Sergi"];
     // llistat vermell inserta text -> reset HTML
-    document.getElementById("morts").innerHTML = "Dead:"; 
+    morts.innerHTML = "Dead:"; 
     // nom seleccionat buit -> reset HTML
-    document.getElementById("names").innerHTML = "";
+    names.innerHTML = "";
     // imprimir de nou el llistat
     printLives();
 }
