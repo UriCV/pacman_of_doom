@@ -20,4 +20,4 @@ Lenguajes de programación que hemos usado:
 -CSS
 -JavaScript
 
-Para ver el proyecto:http://127.0.0.1:5500/index.html
+Para ver el proyecto: https://uricv.github.io/pacman_of_doom/
