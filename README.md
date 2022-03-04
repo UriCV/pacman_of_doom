@@ -6,7 +6,7 @@ Autores:
 -Guillermo
 -Uri Codina
 
-PACMAN OF DOOM
+PACMAN OF DOOM:
 Es un Wheel of Doom de Pacman en el que a medida que el Pacman vaya comiendose personas de la lista de vivos, iran pasando a la lista de muertos 
 
 Herramientas de trabajo que hemos usado y que necesitaras para poder instalar el proyecto:
